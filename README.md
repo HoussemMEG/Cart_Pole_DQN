@@ -5,7 +5,9 @@ The self learning DQN (Deep Q-network) agent has as an objectif of stabilizing t
 
 More information about the task can be found here : https://gym.openai.com/envs/CartPole-v1/
 
-![CartPole-v1](https://cdn-images-1.medium.com/max/1600/1*oMSg2_mKguAGKy1C64UFlw.gif)
+<p align="center">
+  <img src="https://cdn-images-1.medium.com/max/1600/1*oMSg2_mKguAGKy1C64UFlw.gif" alt="CartPole-v1" />
+</p>
 
 ## Pre-Requisites
 * Python v3.x
@@ -27,7 +29,7 @@ The environement gives back to the agent on how well he is doing and the state o
 
 To learn more about Deep Q-networks refere to [1]. (ref for a better learning)
 
-<img src="https://user-images.githubusercontent.com/48867769/91851317-3e549400-ec5f-11ea-8015-88931e568863.png" alt="DQN-agent" style="max-width:50%;">
+<img src="https://user-images.githubusercontent.com/48867769/91851317-3e549400-ec5f-11ea-8015-88931e568863.png" alt="DQN-agent" style="width:50%;">
 
 ## Contributors
 * Houssem Meghnoudj [mail](mailto:houssem.meghnoudj@gmail.com).
