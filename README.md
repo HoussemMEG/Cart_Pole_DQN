@@ -27,7 +27,7 @@ The environement gives back to the agent on how well he is doing and the state o
 
 To learn more about Deep Q-networks refere to [1]. (ref for a better learning)
 
-<img src="https://user-images.githubusercontent.com/48867769/91851317-3e549400-ec5f-11ea-8015-88931e568863.png" alt="DQN-agent" style="max-width:75%;">
+<img src="https://user-images.githubusercontent.com/48867769/91851317-3e549400-ec5f-11ea-8015-88931e568863.png" alt="DQN-agent" style="max-width:50%;">
 
 ## Contributors
 * Houssem Meghnoudj [mail](mailto:houssem.meghnoudj@gmail.com).
