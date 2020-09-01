@@ -19,8 +19,11 @@ More information about the task can be found here : https://gym.openai.com/envs/
 * chariot.py: cart_pole environement and running agent.py. 
 
 ### General insight :
-The environement gives feed back to the agent on how well he is doing and the agent have to improve his strategy (policy) to get a higher score (reward)
-to learn more about Deep Q-networks refere to [1]. (ref for a better learning)
+![Reinforcemen-learning](https://user-images.githubusercontent.com/48867769/91853305-495cf380-ec62-11ea-95ff-c535914ad51d.jpg)
+
+The environement gives back to the agent on how well he is doing and the state of the environement and the agent have to improve his strategy (policy) to get a higher score (reward) knowing that.
+
+To learn more about Deep Q-networks refere to [1]. (ref for a better learning)
 
 ![DQN-agent](https://user-images.githubusercontent.com/48867769/91851317-3e549400-ec5f-11ea-8015-88931e568863.png)
 
