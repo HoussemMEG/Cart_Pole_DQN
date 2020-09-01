@@ -9,7 +9,7 @@ More information about the task can be found here : https://gym.openai.com/envs/
   <img src="https://cdn-images-1.medium.com/max/1600/1*oMSg2_mKguAGKy1C64UFlw.gif" alt="CartPole-v1" />
 </p>
 
-## Pre-Requisites
+## Pre-requisites
 * Python v3.x
 * Tensorflow-GPU = v1.2
 * [Gym](https://github.com/openai/gym)
@@ -24,8 +24,7 @@ More information about the task can be found here : https://gym.openai.com/envs/
 <p align="center">
   <img src="https://user-images.githubusercontent.com/48867769/91853305-495cf380-ec62-11ea-95ff-c535914ad51d.jpg" alt="Reinforcement-learning" />
 </p>
-
-The environement gives back to the agent on how well he is doing and the state of the environement and the agent have to improve his strategy (policy) to get a higher score (reward) knowing that.
+*chariot.py* returns the state of the envorinement and the score to the agent. The agent *agent.py* has to imrouve his strategy (policy) based on these informations and his aquired knowledge to get a higher score (reward). Each step the agent has to choose an action, by doing that he changes the state of the environement and so forth untill convergence.
 
 To learn more about Deep Q-networks refere to [1]. (ref for a better learning)
 
@@ -37,4 +36,4 @@ To learn more about Deep Q-networks refere to [1]. (ref for a better learning)
 * Houssem Meghnoudj [mail](mailto:houssem.meghnoudj@gmail.com).
 
 ## References
-[1] [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236)
+[1] [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236).
