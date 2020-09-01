@@ -3,18 +3,21 @@ import numpy as np
 from agent import *
 
 if __name__ == "__main__":
+    # Env initialisation
     env = gym.make('CartPole-v1')
     state_size = env.observation_space.shape[0]
     action_size = env.action_space.n
+    # Agent creation
     agent = DQNAgent(state_size, action_size)
-    # agent.load("./save/cartpole-dqn.h5")
+    agent.load("./save/cartpole-dqn.h5") # Load a trained agent
+
     done = False
     batch_size = 32
     for e in range(EPISODES):
         state = env.reset()
         state = np.reshape(state, [1, state_size])
         for time in range(500):
-            #env.render()
+            env.render()
             action = agent.act(state)
             next_state, reward, done, _ = env.step(action)
             reward = reward if not done else -10
@@ -29,5 +32,5 @@ if __name__ == "__main__":
                 # Logging training loss every 10 timesteps
                 if time % 10 == 0:
                     print("episode: ", e, "/", EPISODES, ", time: ", time, ", loss: ", loss)
-        # if e % 10 == 0:
-        #     agent.save("./save/cartpole-dqn.h5")
+    # Saving the agent at the end
+    agent.save("./save/cartpole-dqn.h5")

@@ -30,15 +30,19 @@ class DQNAgent:
         return model
 
     def remember(self, state, action, reward, next_state, done):
+        # Storing sarsa information for experience replay
         self.memory.append((state, action, reward, next_state, done))
 
     def act(self, state):
+        # Acting function based on the current state of the env
+        # Exploration and exploitation trade-off
         if np.random.rand() <= self.epsilon:
             return random.randrange(self.action_size)
         act_values = self.model.predict(state)
         return np.argmax(act_values[0])  # returns action
 
     def replay(self, batch_size):
+        # Random sampling from memory
         minibatch = random.sample(self.memory, batch_size)
         states, targets_f = [], []
         for state, action, reward, next_state, done in minibatch:
@@ -51,6 +55,7 @@ class DQNAgent:
             # Filtering out states and targets for training
             states.append(state[0])
             targets_f.append(target_f[0])
+        # Learning from experiences
         history = self.model.fit(np.array(states), np.array(targets_f), epochs=1, verbose=0)
         # Keeping track of loss
         loss = history.history['loss'][0]
